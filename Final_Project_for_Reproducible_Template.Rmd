@@ -1,0 +1,49 @@
+---
+title: |
+  ![](my_pic.jpg){width=1in}
+  
+  Final Project for Reproducible Templates
+author: "Elhami A.A. Ahmed"
+date: "`r Sys.Date()`"
+output:
+  prettydoc::html_pretty:
+    theme: architect
+    highlight: github
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Excutive Summay of the project
+
+This is an R Markdown document written as part of Coursera course on [_**Reproducible Templates for Analysis & Dissemination**_](https://www.coursera.org/learn/reproducible-templates-analysis/home/welcome).This project consist of the most important topics and skills I learnt from it. It is recommended for every person persuading development in his career.
+
+## Most important skills out of this course
+
+* Concept of Reproducibility
+* Literate programming
+* Dynamic Documentation
+* Version control like git & github
+* R Markdown & Knitr
+* Hands on exercises for each skill in the course
+
+
+
+## A plot of the built-in 'pressure' dataset
+
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+
+
+## A table of the top 6 rows of the built-in 'cars' dataset
+
+```{r cars}
+knitr::kable(head(cars))
+```
+
